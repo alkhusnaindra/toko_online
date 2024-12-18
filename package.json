@@ -1,0 +1,29 @@
+{
+  "name": "toko_online",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "node prisma/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.14",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.5"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.0.1",
+    "install": "^0.13.0",
+    "npm": "^11.0.0",
+    "prisma": "^6.0.1"
+  }
+}
